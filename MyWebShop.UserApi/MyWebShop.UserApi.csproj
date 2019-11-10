@@ -30,8 +30,4 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="4.0.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\MyWebShop.Common\MyWebShop.Common.csproj" />
-  </ItemGroup>
-
 </Project>
