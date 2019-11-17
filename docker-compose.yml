@@ -13,7 +13,6 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
   userapi:
-     # image: "MyWebShop.UserApi"
     container_name: user.api
     build: 
       context: .
