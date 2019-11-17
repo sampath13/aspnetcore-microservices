@@ -24,6 +24,12 @@ namespace MyWebShop.Catalogue.Controllers
             return "value";
         }
 
+        [HttpGet("getw/{id}/{name}")]
+        public ActionResult<string> GetWith(int id, string name)
+        {
+            return "value1";
+        }
+
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)

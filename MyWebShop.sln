@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebShop.UserApi", "MyWebShop.UserApi\MyWebShop.UserApi.csproj", "{71544967-2531-4639-BA62-6642A6ABF8CC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebShop.Common", "MyWebShop.Common\MyWebShop.Common.csproj", "{0578C663-11BA-4A8E-BD35-C2F4492554E4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebShop.Catalogue", "MyWebShop.Catalogue\MyWebShop.Catalogue.csproj", "{5660C3A2-C5FA-4BF5-A31E-8ADF499E958C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebShop.APIGateway", "MyWebShop.APIGateway\MyWebShop.APIGateway.csproj", "{55C4B4B4-3E35-4A0A-A62B-24BC8A4D871A}"
@@ -21,10 +19,6 @@ Global
 		{71544967-2531-4639-BA62-6642A6ABF8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71544967-2531-4639-BA62-6642A6ABF8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71544967-2531-4639-BA62-6642A6ABF8CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0578C663-11BA-4A8E-BD35-C2F4492554E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0578C663-11BA-4A8E-BD35-C2F4492554E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0578C663-11BA-4A8E-BD35-C2F4492554E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0578C663-11BA-4A8E-BD35-C2F4492554E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5660C3A2-C5FA-4BF5-A31E-8ADF499E958C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5660C3A2-C5FA-4BF5-A31E-8ADF499E958C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5660C3A2-C5FA-4BF5-A31E-8ADF499E958C}.Release|Any CPU.ActiveCfg = Release|Any CPU

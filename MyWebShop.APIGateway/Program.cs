@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using System.IO;
 
 namespace MyWebShop.APIGateway
 {
@@ -19,7 +14,13 @@ namespace MyWebShop.APIGateway
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-            .ConfigureAppConfiguration(cd => cd.AddJsonFile(Path.Combine("configuration", "configuration.json")))
+            .ConfigureAppConfiguration((hostingContext, config)
+                =>
+           {
+               config.AddJsonFile(Path.Combine("configuration", "configuration.json"), optional: false, reloadOnChange: true);
+               config.AddJsonFile(Path.Combine("configuration", $"configuration.{hostingContext.HostingEnvironment.EnvironmentName}.json"));
+           }
+                )
                 .UseStartup<Startup>();
     }
 }
