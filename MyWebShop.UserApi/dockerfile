@@ -3,6 +3,7 @@ WORKDIR /app
 
 COPY ./MyWebShop.UserApi ./
 RUN dotnet restore
+
 RUN dotnet publish -c Release -o out
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS run-env

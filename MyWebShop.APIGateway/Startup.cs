@@ -19,6 +19,7 @@ namespace MyWebShop.APIGateway
         {
             //services.AddMvc();
             services.AddOcelot();
+            //services.AddHttpClient();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,11 +29,11 @@ namespace MyWebShop.APIGateway
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            //app.UseMvcWithDefaultRoute();
+            //app.Run(async (context) =>
+            //{
+            //    await context.Response.WriteAsync("Hello World!");
+            //});
 
             app.UseOcelot().Wait();
         }

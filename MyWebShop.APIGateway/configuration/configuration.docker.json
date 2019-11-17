@@ -6,8 +6,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "8081"
+          "Host": "userapi",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/user/",
@@ -19,8 +19,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "8082"
+          "Host": "catalogue",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/catalogue/{everything}"
@@ -28,6 +28,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:8083"
+    "BaseUrl": "http://gateway.api:8083"
   }
 }

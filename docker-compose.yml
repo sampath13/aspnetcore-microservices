@@ -1,6 +1,7 @@
 version: "3"
 services:
   gateway:
+    container_name: gateway.api
     build:
       context: .
       dockerfile: ./MyWebShop.APIGateway/dockerfile
@@ -10,19 +11,17 @@ services:
       - userapi
       - catalogue
     environment:
-      - ASPNETCORE_ENVIRONMENT=docker
+      - ASPNETCORE_ENVIRONMENT=Development
   userapi:
      # image: "MyWebShop.UserApi"
+    container_name: user.api
     build: 
       context: .
       dockerfile: ./MyWebShop.UserApi/dockerfile
-    ports: 
-        - "8081:80"
     depends_on:
       - catalogue
   catalogue:
+    container_name: catalogue.api
     build:
       context: .
       dockerfile: ./MyWebShop.Catalogue/dockerfile
-    ports: 
-        - "8082:80"
